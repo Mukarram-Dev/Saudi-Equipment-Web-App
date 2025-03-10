@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>saudi_equipment</title>
+  <link rel="manifest" href="manifest.json">
+
+    <!-- Add the meta description and keywords tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+  
+  
+  <!-- Script to update metadata (unchanged) -->
+  <script>
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang') || 'en';
+      const metadata = {
+        en: {
+          title: 'Heavy Equipment for Sale & Rent in Jeddah, Riyadh',
+          keywords: 'construction equipment, heavy machinery sale, heavy equipment, Saudi Arabia, Jeddah, Riyadh',
+          description: 'New & Used heavy machinery, construction equipment for sell and rent in Jeddah, Riyadh, Saudi Arabia including all popular brands.'
+        },
+        ar: {
+          title: 'موقع معدات السعودية - حراج معدات ثقيلة للبيع أو للإيجار جدة, الرياض',
+          keywords: 'سوق عبرالإنترنت لبيع وشراء المعدات الثقيلة, حراج معدات ثقيلة, معدات ثقيلة, جدة, الرياض, السعودية',
+          description: 'موقع حراج معدات ثقيلة جديد ۱۴۴٤ - ۲۰۲۳ أو مستعمل المعدات والآليات الثقيلة للإيجار أو للبيع أونلاين بجدة، الرياض, السعودية.'
+        }
+      };
+      const metaData = metadata[lang] || metadata['en'];
+      document.title = metaData.title;
+      document.querySelector('meta[name="description"]').setAttribute('content', metaData.description);
+      document.querySelector('meta[name="keywords"]').setAttribute('content', metaData.keywords);
+      document.documentElement.lang = lang;
+    })();
+  </script>
+
+
+
+
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  
+  
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
